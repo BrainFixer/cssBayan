@@ -163,3 +163,31 @@ body {
   box-shadow: 0 0 0.5rem #0007;
   transform: scale(1) rotate(360deg);
 }
+
+@media screen and (min-width: 50rem) {
+  html {
+    font-size: 2.5vw;
+  }
+  .bayan__container {
+    width: 80%;
+  }
+  .bayan__item-switch:checked + .bayan__item-container .bayan__item-img,
+  .bayan__item:hover > .bayan__item-container .bayan__item-img,
+  .bayan__item:active > .bayan__item-container .bayan__item-img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  html {
+    font-size: 2vw;
+  }
+  .bayan__container {
+    width: 60%;
+  }
+  .bayan__item-switch:checked + .bayan__item-container .bayan__item-img,
+  .bayan__item:hover > .bayan__item-container .bayan__item-img,
+  .bayan__item:active > .bayan__item-container .bayan__item-img {
+    width: 60%;
+  }
+}
