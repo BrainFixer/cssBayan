@@ -98,3 +98,68 @@ body {
   transform: scale(0);
   transition: all 0.4s ease;
 }
+
+.bayan__container:active .bayan__button-header,
+.bayan__container:hover .bayan__button-header {
+  color: #000;
+}
+
+.bayan__container:hover .bayan__item .bayan__button-icon_closed,
+.bayan__container:active .bayan__item .bayan__button-icon_closed {
+  opacity: 1;
+}
+
+.bayan__container:active .bayan__item .bayan__button-icon_opened,
+.bayan__container:hover .bayan__item .bayan__button-icon_opened {
+  opacity: 0;
+}
+
+.bayan__container .bayan__item:hover .bayan__button-icon_opened,
+.bayan__container .bayan__item:active .bayan__button-icon_opened {
+  opacity: 1;
+}
+
+.bayan__container .bayan__item:hover .bayan__button-icon_closed,
+.bayan__container .bayan__item:active .bayan__button-icon_closed {
+  opacity: 0;
+}
+
+.bayan__item-switch:checked + .bayan__item-container .bayan__button,
+.bayan__item:hover .bayan__button {
+  padding-bottom: 1rem;
+}
+
+.bayan__container:hover
+  .bayan__item-switch:checked
+  + .bayan__item-container
+  .bayan__button-icon_closed,
+.bayan__container:active
+  .bayan__item-switch:checked
+  + .bayan__item-container
+  .bayan__button-icon_closed {
+  opacity: 0;
+}
+
+.bayan__container:hover
+  .bayan__item-switch:checked
+  + .bayan__item-container
+  .bayan__button-icon_opened,
+.bayan__container:active
+  .bayan__item-switch:checked
+  + .bayan__item-container
+  .bayan__button-icon_opened {
+  opacity: 1;
+}
+
+.bayan__item-switch:checked + .bayan__item-container .bayan__button-header {
+  color: #000;
+}
+
+.bayan__item-switch:checked + .bayan__item-container .bayan__item-img,
+.bayan__item:hover > .bayan__item-container .bayan__item-img,
+.bayan__item:active > .bayan__item-container .bayan__item-img {
+  width: 100%;
+  opacity: 1;
+  box-shadow: 0 0 0.5rem #0007;
+  transform: scale(1) rotate(360deg);
+}
