@@ -9,6 +9,7 @@
 html {
   font-size: 2vw;
   user-select: none;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   color: #000;
-  overflow: scroll;
   font-family: "Oswald", sans-serif;
   min-height: 100vh;
 }
