@@ -39,7 +39,6 @@ body {
 
 .bayan__item {
   display: block;
-  cursor: pointer;
   width: 100%;
   border-top: 0.2rem solid #ccc;
 }
@@ -143,7 +142,7 @@ body {
 
 .bayan__item-switch:checked + .bayan__item-container .bayan__item-img,
 .bayan__item:active > .bayan__item-container .bayan__item-img {
-  width: 80%;
+  width: 70%;
   opacity: 1;
   box-shadow: 0 0 0.5rem #0007;
   transform: scale(1) rotate(360deg);
@@ -176,6 +175,14 @@ body {
 }
 
 @media (hover: hover) {
+  .bayan__item {
+    cursor: pointer;
+  }
+
+  .bayan__container:hover .bayan__button-header {
+    color: #000;
+  }
+
   .bayan__container:hover .bayan__item .bayan__button-icon_closed {
     opacity: 1;
   }
